@@ -97,8 +97,8 @@ class MailGenerator {
     }
 }
 const mb = new MailGenerator();
-const names = "gabriel werneck paiva";
-const domains = "gmail.com";
+const names = "Sheldon Cooper";
+const domains = "caltech.edu";
 mb.addName(names);
 mb.addDomain(domains);
 mb.run();
