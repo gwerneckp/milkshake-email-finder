@@ -13,7 +13,7 @@ After running the program, we obtain the following output:</br>
   'sheldon@caltech.edu',</br>
   'sheldoncooper@caltech.edu',</br>
   'coopersheldon@caltech.edu',</br>
-  **'scooper@caltech.edu'**,</br>
+ **'scooper@caltech.edu'**,</br>
   'coopers@caltech.edu',</br>
   'sheldonc@caltech.edu',</br>
   'csheldon@caltech.edu',</br>
