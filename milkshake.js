@@ -30,8 +30,9 @@ class MailGenerator {
         this.combineDomains = () => {
             for (let i in this.domainList) {
                 for (let j in this.combinedNames) {
-                    let filteredName = this.combinedNames[j].replace("_", "");
-                    filteredName = filteredName.replace(".", "");
+                    // let filteredName = this.combinedNames[j].replace("_", "");
+                    // filteredName = filteredName.replace(".", "");
+                    let filteredName = this.combinedNames[j];
                     if (filteredName.length <= 3) {
                         continue;
                     }

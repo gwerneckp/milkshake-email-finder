@@ -37,8 +37,9 @@ class MailGenerator {
   combineDomains = () => {
     for (let i in this.domainList) {
       for (let j in this.combinedNames) {
-        let filteredName = this.combinedNames[j].replace("_", "");
-        filteredName = filteredName.replace(".", "");
+        // let filteredName = this.combinedNames[j].replace("_", "");
+        // filteredName = filteredName.replace(".", "");
+        let filteredName = this.combinedNames[j]
         if (filteredName.length <= 3) {
           continue;
         }
@@ -78,7 +79,7 @@ class MailGenerator {
                           }
                        let name2=name; // Reverte os nomes <sobrenome> <nome>	
                           for(let k=1;k<=t;k++){
-                              if (w-(t+1)+1<=k+1 && k+1<=w){	   		  
+                              if (w-(t+1)+1<=k+1 && k+1<=w){
                                   name+=separator+names[j+k-1][0];
                                   name2=names[j+k-1][0]+separator+name2;
                               } else {
