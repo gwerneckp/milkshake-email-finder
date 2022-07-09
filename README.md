@@ -1,9 +1,10 @@
 # Milkshake Email Finder
 Provide the script with a list of names and domains, and it will return a list of emails with hopefully the email of the person you are looking for.
 
-In this example, we will be looking for the email of **Sheldon Cooper** who works at **Caltech university**. We will be calling the script with the following arguments:
-names = 'Sheldon Cooper'
-domains = 'caltech.</span>edu'
+In this example, we will be looking for the email of **Sheldon Cooper** who works at **Caltech university**. We will be calling the script with the following arguments:</br>
+
+**names = 'Sheldon Cooper'**</br>
+**domains = 'caltech.</span>edu'**</br>
 
 We know beforehand that Sheldon's email is **scooper@caltech.</span>edu**.
 
