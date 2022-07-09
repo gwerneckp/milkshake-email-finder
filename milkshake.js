@@ -1,5 +1,5 @@
 /*
- * Reimplemented on July 6, 2022
+ * Reimplemented on July 9, 2022
  * Author: Gabriel Paiva
  */
 class MailGenerator {
@@ -97,8 +97,8 @@ class MailGenerator {
     }
 }
 const mb = new MailGenerator();
-const names = "ricardo luis silva paiva";
-const domains = "fb.com";
+const names = "gabriel werneck paiva";
+const domains = "gmail.com";
 mb.addName(names);
 mb.addDomain(domains);
 mb.run();
