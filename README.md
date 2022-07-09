@@ -33,4 +33,4 @@ After running the program, we obtain the following output:
 
 As you can see, we successfully found Sheldon's email address.
 
-This original PHP code written by my father, Ricardo Paiva, in 2005 is available in this repository. This is a reimplementation of the same algorithm in typescript.
+Thes original PHP code written by my father, Ricardo Paiva, in 2005 is available in this repository. This is a reimplementation of the same algorithm in typescript.
