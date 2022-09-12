@@ -35,4 +35,4 @@ After running the program, we obtain the following output:</br>
 
 As you can see, we successfully found Sheldon's email address.</br>
 
-The original PHP code written by my father, Ricardo Paiva, in 2005 is available in this repository. This is a reimplementation of the same algorithm in typescript.
+This repository contains the original PHP code written by my father, Ricardo Paiva, in 2005, as well as the typescript reimplementation. The Python script is a new and improved solution that will generate more email options than the previous one.
