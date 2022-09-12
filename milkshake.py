@@ -9,9 +9,6 @@ Rewritten on September 7, 2002 in Python
 Author: Gabriel Paiva
 '''
 
-from hashlib import new
-from math import comb
-from unicodedata import name
 import unittest
 
 
