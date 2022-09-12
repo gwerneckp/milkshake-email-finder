@@ -92,8 +92,8 @@
  }
 
 $mb=new MailGenerator();
-$nomes=array("sheldon cooper");
-$domains=array("fb.com");
+$nomes=array("ricardo luis silva paiva");
+$domains=array("gmail.com");
 foreach($nomes as $nome){
   $mb->addNome($nome);	
 } 

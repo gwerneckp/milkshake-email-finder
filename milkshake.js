@@ -51,7 +51,7 @@ class MailGenerator {
                 for (let t = 0; t <= n - i; t++) {
                     // Percorrer o final dos nomes
                     for (let j = i; j < n; j++) {
-                        if ((t) > n - j) {
+                        if (t > n - j) {
                             continue;
                         }
                         // Não repetir o nome sozinho (t=0)
@@ -60,16 +60,16 @@ class MailGenerator {
                         }
                         for (let sepI in separators) {
                             let separator = separators[sepI];
-                            for (let w = 0; w <= ((t + 1) * 2) - 1; w++) {
+                            for (let w = 0; w <= (t + 1) * 2 - 1; w++) {
                                 let name;
-                                // Acumular os nomes	
+                                // Acumular os nomes
                                 if (w - (t + 1) + 1 <= 1 && 1 <= w) {
                                     name = names[i][0];
                                 }
                                 else {
                                     name = names[i];
                                 }
-                                let name2 = name; // Reverte os nomes <sobrenome> <nome>	
+                                let name2 = name; // Reverte os nomes <sobrenome> <nome>
                                 for (let k = 1; k <= t; k++) {
                                     if (w - (t + 1) + 1 <= k + 1 && k + 1 <= w) {
                                         name += separator + names[j + k - 1][0];
@@ -98,9 +98,24 @@ class MailGenerator {
     }
 }
 const mb = new MailGenerator();
-const names = "Sheldon Cooper";
-const domains = "caltech.edu";
+const names = "Gabriel Werneck Paiva";
+const domains = "gmail.com";
 mb.addName(names);
 mb.addDomain(domains);
 mb.run();
 console.log(mb.result);
+// console.log(mb.combinedNames.length)
+// let count = 0
+// for(let index in mb.combinedNames){
+//   let name = mb.combinedNames[parseInt(index)]
+//   if(name.includes('_')){
+//     continue
+//   }
+//   if(name.includes('.')){
+//     continue
+//   }
+//   if(name.startsWith('s')){
+//     count++
+//   }
+// }
+// console.log(`Count: ${count}`)
