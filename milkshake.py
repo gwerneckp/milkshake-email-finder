@@ -86,7 +86,13 @@ class MailGenerator:
             for combination in self.combined_separators:
                 self.result.append(f'{combination}@{domain}')
 
-
+    def generate(self, names, domains):
+        self.add_name(names)
+        self.add_domain(domains)
+        self.combine_names()
+        self.combine_separators()
+        self.combine_domains()
+        return self.result
 
 class TestEmails(unittest.TestCase):
     def test_single_name(self):
