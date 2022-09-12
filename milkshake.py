@@ -196,30 +196,3 @@ class TestEmails(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-    # names_lenght = len(self.name_list) - 1
-    # # itterates through names
-    # for i in range(names_lenght):
-    #     # itterates through remaining names
-    #     for j in range(names_lenght-i):
-    #         # itterates
-    #         for k in range(j, names_lenght):
-    #             if j > 3-k:
-    #                 continue
-    #             if k == i and j > 0:
-    #                 continue
-    # for name in self.name_list:
-    #     for j in range(1, (name_lenght ** 2)+1):
-    #         for i in range(1, 3):
-
-    #             if i % 2:
-    #                 print(f'index: {j-1}')
-    #                 combined_names[j-1].append(name)
-    #             else:
-    #                 print(f'index: {(name_lenght ** 2)+j-1}')
-    #                 combined_names[(name_lenght ** 2)+j-1].append(name[0])
-    #             print(combined_names)
-    #             print('\n')
-    # print('final print:')
-    # print(combined_names)
-    # for name in self.n
