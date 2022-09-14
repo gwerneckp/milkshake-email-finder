@@ -1,4 +1,4 @@
-'''
+"""
 Created on Sep 8, 2005 in PHP
 Author: Ricardo Paiva
 
@@ -7,7 +7,7 @@ Author: Gabriel Paiva
 
 Rewritten on September 7, 2002 in Python
 Author: Gabriel Paiva
-'''
+"""
 
 import unittest
 
@@ -72,7 +72,7 @@ class MailGenerator:
                 self.combined_names.append(new_combination)
 
         # reversed
-        for combined_name_i in range(len((self.combined_names))):
+        for combined_name_i in range(len(self.combined_names)):
             reversed_combination = self.combined_names[combined_name_i][::-1]
             self.combined_names.append(reversed_combination)
 
@@ -93,6 +93,7 @@ class MailGenerator:
         self.combine_separators()
         self.combine_domains()
         return self.result
+
 
 class TestEmails(unittest.TestCase):
     def test_single_name(self):
@@ -129,13 +130,6 @@ class TestEmails(unittest.TestCase):
         mb.add_domain('gmail.com')
         mb.combine_names()
         self.assertIn(['gabriel', 'werneck'], mb.combined_names)
-
-    def test_first_name_one_letter(self):
-        mb = MailGenerator()
-        mb.add_name("gabriel werneck")
-        mb.add_domain('gmail.com')
-        mb.combine_names()
-        self.assertIn(['g', 'werneck'], mb.combined_names)
 
     def test_first_name_one_letter(self):
         mb = MailGenerator()
