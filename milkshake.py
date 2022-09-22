@@ -5,7 +5,7 @@ Author: Ricardo Paiva
 Reimplemented on July 9, 2022 in Typescript
 Author: Gabriel Paiva
 
-Rewritten on September 7, 2002 in Python
+Rewritten on September 7, 2022 in Python
 Author: Gabriel Paiva
 """
 
