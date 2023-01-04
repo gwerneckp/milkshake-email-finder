@@ -52,13 +52,7 @@ server.login(args.email, args.password)
 
 # List of email addresses to send the email to
 verbose("Generating email addresses")
-mb = MailGenerator()
-mb.add_name(args.name)
-mb.add_domains(args.domains)
-mb.combine_names()
-mb.combine_separators()
-mb.combine_domains()
-recipients = mb.result
+recipients = MailGenerator().generate(args.name, args.domains)
 
 # Email message to send
 verbose("Constructing email message")
