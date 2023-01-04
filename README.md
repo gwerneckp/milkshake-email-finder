@@ -1,4 +1,4 @@
-# Milkshake Email Finder
+# milkshake.py
 
 Provide the script with a list of names and domains, and it will return a list of emails with hopefully the email of the
 person you are looking for.
@@ -42,7 +42,7 @@ This repository contains the original PHP code written by my father, Ricardo Pai
 reimplementation. The Python script is a new and improved solution that will generate more email options than the
 previous one.
 
-# BulkMailer
+# bulkmailer.py
 
 BulkMailer is a command-line script that allows you to send emails to a list of recipients in bulk. It takes in a
 variety of arguments to customize the email and the recipients.
@@ -78,7 +78,7 @@ variety of arguments to customize the email and the recipients.
 * **--verbose/-v:** If this flag is provided, the script will print out debugging information as it runs.
 
 Here is an example of how you might use the script:</br>
-`python BulkMailer.py -e myemail@example.com -p mypassword -s 'Hello World' -m 'This is a test email' -n 'Sheldon Cooper' -d 'caltech.edu gmail.com'`
+`python bulkmailer.py -e myemail@example.com -p mypassword -s 'Hello World' -m 'This is a test email' -n 'Sheldon Cooper' -d 'caltech.edu gmail.com'`
 
 This will send an email with the subject 'Hello World' and the message 'This is a test email' to all of the potential
 email addresses for Sheldon Cooper at 'caltech.edu' and 'gmail.com'.
