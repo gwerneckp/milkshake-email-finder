@@ -39,7 +39,7 @@ class MailGenerator:
         # split full filtered name into array
         self.name_list = filtered_full_name.split(' ')
 
-    def add_domain(self, domains):
+    def add_domains(self, domains):
         self.domain_list = domains.split(' ')
 
     def combine_names(self):
@@ -87,7 +87,7 @@ class MailGenerator:
 
     def generate(self, names, domains):
         self.add_name(names)
-        self.add_domain(domains)
+        self.add_domains(domains)
         self.combine_names()
         self.combine_separators()
         self.combine_domains()
